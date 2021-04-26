@@ -1,0 +1,14 @@
+.regForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+//    color: white;
+    width: 500px;
+
+    button{
+        margin: 10px;
+        padding: 10px; 
+    }
+
+}

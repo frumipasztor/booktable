@@ -1,0 +1,64 @@
+$bebas: "Bebas Neue", cursive;
+$orange: #bc7828;
+$yellow: #ffc601;
+$beige: #f2bc78;
+$white: #fdfefd;
+$green: #50bc45;
+$gray: #939493;
+
+.wrapper {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("./header.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+
+  .header {
+    height: 100vh;
+    background: rgb(5, 3, 4);
+    background: linear-gradient(
+      0deg,
+      rgba(5, 3, 4, 1) 0%,
+      rgba(0, 212, 255, 0) 20%
+    );
+
+    .header-text {
+      position: relative;
+      width: 600px;
+      top: 50%;
+      left: 10%;
+      transform: translate(-10%, -50%);
+      color: $white;
+
+      h1 {
+        font-size: 5rem;
+        letter-spacing: 4px;
+        font-family: $bebas;
+      }
+
+      span {
+        position: absolute;
+        height: 5px;
+        width: 90%;
+        border-radius: 3rem;
+        background: rgb(0, 140, 69);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 140, 69, 1) 0%,
+          rgba(244, 245, 240, 1) 50%,
+          rgba(205, 33, 42, 1) 100%
+        );
+      }
+
+      h2 {
+        font-size: 2.5em;
+        color: $yellow;
+        margin: 20px 0 0;
+      }
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
+// @import "../node_modules/@syncfusion/ej2-react-inputs/styles/material.css";
+
+//!variables
+//colors
+$dark: #050304;
+$red: #860202;
+$orange: #bc7828;
+$yellow: #ffc601;
+$beige: #f2bc78;
+$white: #fdfefd;
+$green: #50bc45;
+$gray: #939493;
+
+//fonts
+$bebas: 'Bebas Neue', cursive;
+$montserrat: 'Montserrat', sans-serif;
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $montserrat;
+}
+
+
+ body{
+   background-color: $dark;
+   color: $white;
+   width: 100%;
+   overflow-x: hidden;
+ }
+
+ 
