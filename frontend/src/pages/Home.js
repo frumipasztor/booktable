@@ -1,15 +1,17 @@
 import React from "react";
-import PizzaFetch from "../components/pizzaFetch/PizzaFetch";
 import Header from "../components/header/Header";
-import AboutUs from "../components/aboutUs/aboutUs";
+import Horizontal from "../components/horizontalBar/Horizontal";
+import Weeks from "../components/weeksPanel/Weeks";
+import Footer from "../components/footer/Footer";
 
 
 function Home() {
   return (
     <div className="home">
       <Header />
-      <AboutUs />
-      <PizzaFetch />
+      <Horizontal/>
+      <Weeks/>
+      <Footer/>
     </div>
   );
 }

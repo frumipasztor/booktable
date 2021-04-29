@@ -57,7 +57,7 @@ exports.pizzaController = (req, res) => {
                 price: "1650",
              },       
              {
-                name: "Brewer’s Flatbread Pizza",
+                name: "Brewer’s Flatbread",
                 img:"brewers",
                 base:"tejfölös",
                 topping: "paprika, mozzarella, paradicsom, bacon, lila hagyma",

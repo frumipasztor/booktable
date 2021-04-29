@@ -1,0 +1,108 @@
+//!variables
+//colors
+$dark: #050304;
+$red: #860202;
+$orange: #bc7828;
+$yellow: #ffc601;
+$beige: #f2bc78;
+$white: #fdfefd;
+$green: #50bc45;
+$gray: #939493;
+
+//fonts
+$bebas: 'Bebas Neue', cursive;
+$montserrat: 'Montserrat', sans-serif;
+
+.pizzaFetchContainer{
+    margin: 100px auto;
+    width: 70%;
+    
+    .siteTitle{
+        font-family: $bebas;
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 4px;
+        margin: 50px 0 20px;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5px;
+        width: 40%;
+        margin: 0 auto;
+        border-radius: 3rem;
+        background: rgb(0, 140, 69);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 140, 69, 1) 0%,
+          rgba(244, 245, 240, 1) 50%,
+          rgba(205, 33, 42, 1) 100%
+        );
+      }
+    .shortText{
+        text-align: center;
+        margin: 50px 0 100px;
+    }
+}
+
+.pizzaContainer{
+    width: 100%;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: flex-start;
+    margin: 20px; 
+  //  padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover{
+        background: rgba(255,255,255,0.3);
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    img{
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .pizzaDetails{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+
+        .pizzaName{
+            font-family: $bebas;
+            font-size: 3rem;
+            letter-spacing: 3px;
+        }
+        .pizzaCardDecor{
+            height: 5px;
+            width: 80%;
+            border-radius: 3rem;
+            background: rgb(0, 140, 69);
+            background: linear-gradient(
+              90deg,
+              rgba(0, 140, 69, 1) 0%,
+              rgba(244, 245, 240, 1) 50%,
+              rgba(205, 33, 42, 1) 100%
+            );
+        }
+        .toppings{
+            font-size: 1rem;
+            text-align: center;
+            line-height: 50px;
+        }
+        .pizzaPrice{
+            font-size: 2rem;
+            margin: 20px 0 0;
+        }
+    }
+}

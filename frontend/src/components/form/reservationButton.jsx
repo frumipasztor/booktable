@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import './formButton.scss';
 
 const ReservationButton = (props) => {
   const [data, setData] = useState("");
@@ -14,6 +15,8 @@ const ReservationButton = (props) => {
 
       formData.append("name", props.name);
       formData.append("email", props.email);
+      formData.append("tel", props.tel);
+      formData.append("head", props.head);
       formData.append("date", props.date);
 
       await axios({

@@ -1,0 +1,55 @@
+//!variables
+//colors
+$dark: #050304;
+$red: #860202;
+$orange: #bc7828;
+$yellow: #ffc601;
+$beige: #f2bc78;
+$white: #fdfefd;
+$green: #50bc45;
+$gray: #939493;
+
+//fonts
+$bebas: 'Bebas Neue', cursive;
+$montserrat: 'Montserrat', sans-serif;
+
+.aboutUs{
+    margin: 0 auto;
+    width: 70%;
+    
+    .aboutUsTitle{
+        font-family: $bebas;
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 4px;
+        margin: 50px 0 25px;
+    }
+    .aboutUsContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        padding: 40px; 
+    
+        .aboutUsleft{
+            width: 50%;
+            height: 700px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+            url("./aboutus.jpeg"); 
+            padding: 40px;
+            border-radius: 5px;
+            background-position: center center;
+        }
+
+    .aboutUsText{
+        text-align: left;
+        width: 50%;
+        padding: 40px;
+        p {
+            font-size: 1.2rem;
+            margin: 30px 0 
+        }
+    }
+
+    }
+}

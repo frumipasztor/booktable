@@ -49,6 +49,7 @@ a {
   
   .nav-menu.active {
     right: 0;
+    z-index: 200;
     transition: 350ms;
 
     .menu-points{

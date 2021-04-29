@@ -13,7 +13,9 @@ app.use(cors());
 
 app.get("/", (req, res) => res.send("Hello world"));
 
-app.use("/pizza/", require('./routers/pizzaRoute'))
+app.use("/pizza/", require('./routers/pizzaRoute'));
+app.use("/toppizza/", require('./routers/topPizzaRoute'));
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
@@ -26,6 +28,8 @@ app.use(fileUpload());
         let costumer = {
             name: req.body.name,
             email: req.body.email,
+            tel: req.body.tel,
+            head: req.body.head,
             date: req.body.date,
         };
 
