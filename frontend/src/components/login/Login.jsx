@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
 import "./login.scss";
 
+
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -24,7 +25,7 @@ const LoginPage = () => {
       if (data.data.msg === "ok") {
         setIslogged(true);
       } else {
-        alert("Wrong username or password");
+        alert("Hibás felhasználónév vagy jelszó!");
       }
     }
   }, [data]);
@@ -47,7 +48,7 @@ const LoginPage = () => {
       }).then((response) => setData(response));
     };
 
-    return <button onClick={login}>Log In!</button>;
+    return <button onClick={login}>Bejelentkezés</button>;
   };
 
   if (!isLogged) {

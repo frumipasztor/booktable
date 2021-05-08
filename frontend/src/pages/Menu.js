@@ -20,7 +20,9 @@ function Menu() {
           Suspendisse pharetra non lacus et maximus. Curabitur convallis ut orci
           non scelerisque. Duis mollis rutrum sem eu tristique.
         </p>
+        <div className="menuContainer">
         <PizzaFetch />
+        </div>
       </div>
       <Footer/>
     </div>

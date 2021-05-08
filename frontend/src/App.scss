@@ -92,7 +92,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
-    transition: 0.5s;
+    transition: 0.2s;
     outline: none;
     position: relative;
     border: 2px solid transparent;
@@ -108,15 +108,15 @@ body {
     height: 10px;
     border-top: 2px solid $red;
     border-left: 2px solid $red;
-    transition: 0.5s;
+    transition: 0.2s;
     overflow: hidden;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
   }
   button:hover {
     background-color: $red;
     color: #fff;
     box-shadow: 0 0 50px $red;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
   }
 
   button:hover:before {
@@ -134,7 +134,7 @@ body {
     height: 10px;
     border-bottom: 2px solid $red;
     border-right: 2px solid $red;
-    transition: 0.5s;
+    transition: 0.2s;
   }
 
   button:hover:after {

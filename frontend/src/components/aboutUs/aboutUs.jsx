@@ -4,28 +4,23 @@ import "./aboutUs.scss";
 function AboutUs() {
   return (
     <div className="aboutUs">
-      <h2 className="aboutUsTitle">Az étteremről</h2>
+      <div className="siteTitle">
+        <h2>Az étteremről</h2>
+        <span className="decorSpan"></span>
+      </div>
       <div className="aboutUsContainer">
-        {/* <img src="/img/otherimages/aboutus.jpeg" alt=""></img> */}
-        <div className="aboutUsleft"></div>
+        <div className="aboutUsleft">
+          <img className="pizza1" src="/img/aboutUs/pizza1.png" alt=""></img>
+          <img className="pizza2" src="/img/aboutUs/pizza2.png" alt=""></img>
+          <img className="pizza3" src="/img/aboutUs/pizza3.png" alt=""></img>
+        </div>
         <div className="aboutUsText">
           <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-            dolor sit amet Lorem ipsum dolor sit amet ipsum dolor sit amet.
-          </p>
-
-          <p>
-            {" "}
             Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
             dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
             Lorem Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem
             ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor
             sit amet Lorem ipsum dolor sit amet
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-            dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-            Lorem ipsum dolor sit amet
           </p>
         </div>
       </div>

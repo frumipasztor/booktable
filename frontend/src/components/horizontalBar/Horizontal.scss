@@ -27,11 +27,13 @@ $gray: #939493;
       width: 33%;
       padding: 20px;
       margin: 50px;
+      transition: 1s;
 
       img {
         width: 400px;
         height: 250px;
         object-fit: cover;
+        border-radius: 5px;
       }
 
       h3{
@@ -45,6 +47,11 @@ $gray: #939493;
         font-size: 1.5rem;
         color: $yellow;
       }
+    }
+    .topCards:hover {
+      cursor: pointer;
+      transition: 2s;
+      transform: scale(1.1);
     }
   }
 }

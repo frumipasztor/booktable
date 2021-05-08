@@ -1,12 +1,16 @@
 import React, {useState, useEffect} from 'react';
+// eslint-disable-next-line
 import LoadingMask from "../loadingMask/LoadingMask";
+// eslint-disable-next-line
 import BookedPerson from "./BookedPerson";
 import "./admin.scss";
 
 function Bookings() {
 
     //! DATA FETCH
+    // eslint-disable-next-line
     const [data, setData] = useState([]);
+    // eslint-disable-next-line
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

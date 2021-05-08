@@ -69,6 +69,17 @@ $gray: #939493;
         justify-content: space-between;
         font-size: 2rem;
         width: 15%;
+
+        svg{
+            color: $yellow;
+            transition: 1s;
+            cursor: pointer;
+        }
+        svg:hover{
+            color: $white;
+            transition: 1s;
+            transform: scale(1.2);
+        }
     }
 
 

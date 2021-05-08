@@ -1,6 +1,8 @@
 import React from "react";
 import "./Horizontal.scss";
 import HorizontalOffers from "./horizontalOffers";
+import Fade from 'react-reveal/Fade';
+
 
 function Horizontal() {
   return (
@@ -10,7 +12,9 @@ function Horizontal() {
         <span className="decorSpan"></span>
       </div>
       <div className="horizontalItems">
+      <Fade bottom>
         <HorizontalOffers />
+        </Fade>
       </div>
     </div>
   );
