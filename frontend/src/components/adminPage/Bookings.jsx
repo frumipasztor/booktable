@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react';
-// eslint-disable-next-line
 import LoadingMask from "../loadingMask/LoadingMask";
-// eslint-disable-next-line
 import BookedPerson from "./BookedPerson";
 import "./admin.scss";
 
@@ -24,16 +22,16 @@ function Bookings() {
         const result = await fetch("http://localhost:3001/bookings");
         const jsonData = await result.json();
         console.log(jsonData);
-        setData(jsonData.person);
+        setData(jsonData.persons);
     };
 
     return (
         <div className="bookingsPage">
-            {/* {loading ? (
+            {loading ? (
         <LoadingMask />
       ) : (
-        data.map((person, index) => <BookedPerson person={person} key={index} />)
-      )} */}
+        data.map((persons, index) => <BookedPerson persons={persons} key={index} />)
+      )} 
       Fejlesztés alatt...
         </div>
     )

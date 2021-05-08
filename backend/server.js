@@ -22,7 +22,7 @@ app.get("/bookings", (req, res) => res.send(jsonBookingData));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 //! file feltöltés
- app.use(fileUpload());
+app.use(fileUpload());
 
 app.post("/bookatable", function (req, res) {
   let costumer = {
@@ -34,13 +34,13 @@ app.post("/bookatable", function (req, res) {
   };
 
   if (
-    jsonBookingData.some(
+    jsonBookingData.persons.some(
       (jsonBookingData) => jsonBookingData.email === req.body.email
     )
   ) {
     res.json({ msg: "failed", email: req.body.email });
   } else {
-    jsonBookingData.push(costumer);
+    jsonBookingData.persons.push(costumer);
 
     let data = JSON.stringify(jsonBookingData, null, 2);
 
@@ -53,6 +53,8 @@ app.post("/bookatable", function (req, res) {
           name: req.body.name,
           email: req.body.email,
           date: req.body.date,
+          tel: req.body.tel,
+          head: req.body.head,
         }); // send the client something
       }
     });
@@ -68,29 +70,29 @@ app.post("/bookatable", function (req, res) {
 //! Login form
 
 app.post("/login", async (req, res) => {
-    // const username = await req.body.username;
-    // const password = await req.body.password;
+  // const username = await req.body.username;
+  // const password = await req.body.password;
 
-    let findResult = await jsonData.find(
-        (user) => user.username === req.body.username
-    );
-    if (
-        !findResult ||
-        (typeof findResult === "object" &&
-            !passwordHash.verify(req.body.password, findResult.password))
-    ) {
-        // res.status(400).send();
-        res.json({ msg: "Wrong username or password" });
-    } /* else if (
+  let findResult = await jsonData.find(
+    (user) => user.username === req.body.username
+  );
+  if (
+    !findResult ||
+    (typeof findResult === "object" &&
+      !passwordHash.verify(req.body.password, findResult.password))
+  ) {
+    // res.status(400).send();
+    res.json({ msg: "Wrong username or password" });
+  } /* else if (
         typeof findResult === "object" &&
         !passwordHash.verify(req.body.password, findResult.password)
     ) {
         res.json({ msg: "Wrong username or password" });
     } */ else if (
-        typeof findResult === "object" &&
-        passwordHash.verify(req.body.password, findResult.password)
-    ) {
-        res.json({ msg: "ok" });
-        console.log("ok");
-    }
+    typeof findResult === "object" &&
+    passwordHash.verify(req.body.password, findResult.password)
+  ) {
+    res.json({ msg: "ok" });
+    console.log("ok");
+  }
 });

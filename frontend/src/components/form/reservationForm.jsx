@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./form.scss";
 import ReservationButton from "./reservationButton";
 import TextField from "@material-ui/core/TextField";
+import "date-fns";
 
 
 const RegistrationForm = () => {
@@ -10,6 +11,7 @@ const RegistrationForm = () => {
   const [date, setDate] = useState("");
   const [head, setHead] = useState("");
   const [tel, setTel] = useState("");
+  
 
 
   const nameChange = (e) => {
@@ -59,10 +61,8 @@ const RegistrationForm = () => {
         label="Hány főre szeretnél foglalni?"
         type="number"
         value={head}
-        min="1"
-        max="8"
       />
-      <TextField
+     {/* <TextField
         id="datetime-local"
         label="Asztalfoglalás időpontja"
         type="datetime-local"
@@ -71,7 +71,10 @@ const RegistrationForm = () => {
         InputLabelProps={{
           shrink: true,
         }}
-      />
+      />  */}
+
+
+
       
       <ReservationButton
         name={name}
