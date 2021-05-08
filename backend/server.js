@@ -61,6 +61,11 @@ app.post("/bookatable", function (req, res) {
   }
 });
 
+app.post("/deleteBooking", function (req, res) {
+  res.json({ msg: "success"})
+  console.log(req.body.email);
+});
+
 //!Jelszó generálás adminhoz
 
 // const hashedPassword = passwordHash.generate("admin");

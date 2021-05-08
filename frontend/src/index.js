@@ -12,8 +12,7 @@ const theme = createMuiTheme({
     secondary: {
       main: "#ffc601",
     },
-  },
-  
+  },  
 });
 
 ReactDOM.render(

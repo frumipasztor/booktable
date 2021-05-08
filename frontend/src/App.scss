@@ -22,6 +22,7 @@ $montserrat: "Montserrat", sans-serif;
 
 body {
   background-color: $dark;
+ //background-color: #50bc45;
   color: $white;
   width: 100%;
   overflow-x: hidden;
@@ -40,14 +41,13 @@ body {
   .MuiFormLabel-root {
     color: $white;
   }
+  .css-1ccyofs-MuiInputBase-root-MuiFilledInput-root:before{
+     border-bottom: 1px solid $white;
+   }
 
-  .MuiInput-underline::before {
+   .css-1ccyofs-MuiInputBase-root-MuiFilledInput-root:before:hover {
     border-bottom: 1px solid $white;
-  }
-
-  .MuiInput-underline::before:hover {
-    border-bottom: 1px solid $white;
-  }
+   }
 
   //! H2
   .siteTitle {

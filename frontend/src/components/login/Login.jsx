@@ -58,11 +58,13 @@ const LoginPage = () => {
             onChange={(e) => setUsername(e.target.value)}
             label="Felhasználónév"
             type="text"
+            variant="filled"
           />
           <TextField
             onChange={(e) => setPassword(e.target.value)}
             label="Jelszó"
             type="password"
+            variant="filled"
           />
 
           <LoginButton

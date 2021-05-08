@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./form.scss";
 import ReservationButton from "./reservationButton";
 import TextField from "@material-ui/core/TextField";
-import "date-fns";
-
 
 const RegistrationForm = () => {
   const [name, setName] = useState("");
@@ -11,8 +9,6 @@ const RegistrationForm = () => {
   const [date, setDate] = useState("");
   const [head, setHead] = useState("");
   const [tel, setTel] = useState("");
-  
-
 
   const nameChange = (e) => {
     setName(e.target.value);
@@ -33,56 +29,64 @@ const RegistrationForm = () => {
     setDate(e.target.value);
   };
 
+  let today = new Date();
+  today.setHours(today.getHours() + 1);
+  today = today.toISOString().slice(0, 16);
+ // console.log(today);
 
   return (
     <div className="regPage">
-      <form>
-      <TextField
-        onChange={(e) => nameChange(e)}
-        label="Név"
-        type="text"
-        value={name}
-      />
-      <TextField
-        label="E-mail"
-        onChange={(e) => emailChange(e)}
-        value={email}
-        type="email"
-      />
-      <TextField
-        label="Telefonszám"
-        onChange={(e) => telChange(e)}
-        value={tel}
-        type="tel"
-        pattern="[0-9]{11}"
-      />
-      <TextField
-        onChange={(e) => headChange(e)}
-        label="Hány főre szeretnél foglalni?"
-        type="number"
-        value={head}
-      />
-     {/* <TextField
-        id="datetime-local"
-        label="Asztalfoglalás időpontja"
-        type="datetime-local"
-        value={date}
-        onChange={(e) => dateChange(e)}
-        InputLabelProps={{
-          shrink: true,
-        }}
-      />  */}
+      <form >
+        <TextField
+          onChange={(e) => nameChange(e)}
+          variant="filled"
+          label="Név"
+          type="text"
+          value={name}
+        />
+        <TextField
+          label="E-mail"
+          onChange={(e) => emailChange(e)}
+          variant="filled"
+          value={email}
+          type="email"
+        />
+        <TextField
+          label="Telefonszám"
+          onChange={(e) => telChange(e)}
+          variant="filled"
+          value={tel}
+          type="tel"
+          pattern="[0-9]{11}"
+        />
+        <TextField
+          onChange={(e) => headChange(e)}
+          variant="filled"
+          label="Hány főre szeretnél foglalni?"
+          type="number"
+          value={head}
+          InputProps={{ inputProps: { min: 1, max: 8 } }}
+        />
+        <TextField
+          id="datetime-local"
+          variant="filled"
+          label="Asztalfoglalás időpontja"
+          type="datetime-local"
+          value={date}
+          onChange={(e) => dateChange(e)}
+          InputProps={{ inputProps: { min: today, max: "2031-05-30T17:27" } }}
+          InputLabelProps={{
+            shrink: true,
+          }}
+        />
 
-
-
-      
-      <ReservationButton
-        name={name}
-        email={email}
-        tel={tel}
-        date={date}
-        head={head}
-      />
+        <ReservationButton
+          name={name}
+          email={email}
+          tel={tel}
+          date={date}
+          head={head}
+        />
       </form>
     </div>
   );
