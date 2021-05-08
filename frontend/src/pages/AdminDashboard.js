@@ -1,20 +1,20 @@
 import React from "react";
 import Header from "../components/header/Header";
-import ReservationForm from "../components/form/reservationForm";
 import Footer from "../components/footer/Footer";
+import Bookings from "../components/adminPage/Bookings";
 
-function Reservation() {
+function AdminDashboard() {
   return (
-    <div className="reservation">
+    <div className="adminDashboardPage">
       <Header />
       <div className="siteTitle">
-        <h2>Asztalfoglalás</h2>
+        <h2>Foglalások kezelése</h2>
         <span className="decorSpan"></span>
       </div>
-      <ReservationForm />
+      <Bookings />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default Reservation;
+export default AdminDashboard;

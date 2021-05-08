@@ -15,55 +15,22 @@ $bebas: "Bebas Neue", cursive;
   align-items: center;
   justify-content: center;
   margin: 50px 0;
+  //background-color: $gray;
 
-  h2 {
-    font-family: $bebas;
-    font-size: 5rem;
-    letter-spacing: 5px;
-    margin: 50px 0 0;
-  }
-  .decorSpan{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5px;
-    width: 40%;
-    margin: 0  0 50px;
-    border-radius: 3rem;
-    background: rgb(0, 140, 69);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 140, 69, 1) 0%,
-      rgba(244, 245, 240, 1) 50%,
-      rgba(205, 33, 42, 1) 100%
-    );
-  }
-
-  .regForm{
+  form {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 400px;
     position: relative;
-   // background:blue;
   }
-  label{
-    margin: 10px 0;
-    text-align: center;
-    font-family: $bebas;
-    font-size: 1.5rem;
 
-  input{
-    width: 400px;
-    margin-top: 10px;
-    padding: 7px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    outline: none;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-  }
-}
+  .reservationButton {
+    
+    .bookmsg {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }  
 }

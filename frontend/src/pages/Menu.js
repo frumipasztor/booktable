@@ -8,8 +8,9 @@ function Menu() {
     <div className="menu">
       <Header />
       <div className="pizzaFetchContainer">
-        <h2 className="siteTitle">Étlapunk</h2>
-        <span></span>
+        <div className="siteTitle">
+        <h2>Étlapunk</h2>
+        <span className="decorSpan"></span></div>
         <p className="shortText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           cursus tristique mauris id vehicula. Nulla vestibulum enim vitae

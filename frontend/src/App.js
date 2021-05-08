@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Reservation from "./pages/Reservation";
-import Aboutus from "./pages/Aboutus";
+import LoginPage from "./pages/LoginPage";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/menu" component={Menu} />
           <Route path="/reservation" component={Reservation} />
-          <Route path="/aboutus" component={Aboutus} />
+          <Route path="/loginPage" component={LoginPage} />
+          <Route path="/adminDashboard" component={AdminDashboard}/>
         </Switch>
       </Router>
     </>

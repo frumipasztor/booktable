@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import './formButton.scss';
 
 const ReservationButton = (props) => {
   const [data, setData] = useState("");
@@ -10,7 +9,7 @@ const ReservationButton = (props) => {
   const reserve = async (e) => {
     e.preventDefault();
 
-    if (props.name !== "" && props.email !== "" && props.date !== "") {
+    if (props.name !== "" && props.email !== "" && props.date !== "" && props.tel !== "" && props.head !== "") {
       let formData = new FormData();
 
       formData.append("name", props.name);
@@ -18,6 +17,7 @@ const ReservationButton = (props) => {
       formData.append("tel", props.tel);
       formData.append("head", props.head);
       formData.append("date", props.date);
+      console.log(props);
 
       await axios({
         method: "POST",
@@ -30,7 +30,7 @@ const ReservationButton = (props) => {
     } else {
       setEmptyCheck(true);
     }
-
+    
     /////////////////////////////////
   };
 

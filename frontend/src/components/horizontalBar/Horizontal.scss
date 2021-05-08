@@ -13,27 +13,6 @@ $gray: #939493;
   max-height: 1000px;
   margin: 0 auto;
 
-  h2 {
-    font-family: $bebas;
-    font-size: 5rem;
-    letter-spacing: 4px;
-    text-align: center;
-    margin: 50px 0 0;
-  }
-span{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 5px;
-  width: 40%;
-  border-radius: 3rem;
-  background: rgb(0, 140, 69);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 140, 69, 1) 0%,
-    rgba(244, 245, 240, 1) 50%,
-    rgba(205, 33, 42, 1) 100%
-  );}
 
   .topOffers {
     display: flex;
@@ -58,6 +37,7 @@ span{
       h3{
         font-family: $bebas;
         font-size: 2rem;
+        letter-spacing: 2px;
         margin: 10px;
       }
 

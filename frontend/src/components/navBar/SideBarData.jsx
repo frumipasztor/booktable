@@ -13,10 +13,10 @@ export const SideBarData = [
         title: 'Menü',
         path: '/menu',
         className: 'nav-text',
-    },
-    {
-        title: 'Rólunk',
-        path: '/aboutus',
+    },{
+        title: 'Bejelentkezés',
+        path: '/loginPage',
         className: 'nav-text',
     },
+    
 ]

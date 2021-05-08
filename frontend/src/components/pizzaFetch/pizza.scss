@@ -17,29 +17,29 @@ $montserrat: 'Montserrat', sans-serif;
     margin: 100px auto;
     width: 70%;
     
-    .siteTitle{
-        font-family: $bebas;
-        font-size: 5rem;
-        text-align: center;
-        letter-spacing: 4px;
-        margin: 50px 0 20px;
-    }
-    span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 5px;
-        width: 40%;
-        margin: 0 auto;
-        border-radius: 3rem;
-        background: rgb(0, 140, 69);
-        background: linear-gradient(
-          90deg,
-          rgba(0, 140, 69, 1) 0%,
-          rgba(244, 245, 240, 1) 50%,
-          rgba(205, 33, 42, 1) 100%
-        );
-      }
+    // .siteTitle{
+    //     font-family: $bebas;
+    //     font-size: 5rem;
+    //     text-align: center;
+    //     letter-spacing: 4px;
+    //     margin: 50px 0 20px;
+    // }
+    // span{
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     height: 5px;
+    //     width: 40%;
+    //     margin: 0 auto;
+    //     border-radius: 3rem;
+    //     background: rgb(0, 140, 69);
+    //     background: linear-gradient(
+    //       90deg,
+    //       rgba(0, 140, 69, 1) 0%,
+    //       rgba(244, 245, 240, 1) 50%,
+    //       rgba(205, 33, 42, 1) 100%
+    //     );
+    //   }
     .shortText{
         text-align: center;
         margin: 50px 0 100px;
@@ -59,9 +59,9 @@ $montserrat: 'Montserrat', sans-serif;
     transition: 1s;
 
     &:hover{
-        background: rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.2);
         transform: scale(1.1);
-        transition: 1s;
+        transition: 1s; 
     }
 
     img{
