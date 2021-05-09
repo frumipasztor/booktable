@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
 import "./login.scss";
-
+import "./responsivity.scss";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -15,10 +15,10 @@ const LoginPage = () => {
   const changeLog = () => {
     setIslogged(true);
   };
-//   const logOut = () => {
-//     setIslogged(false);
-//     // setIsLogOut(true);
-//   };
+  //   const logOut = () => {
+  //     setIslogged(false);
+  //     // setIsLogOut(true);
+  //   };
 
   useEffect(() => {
     if (data !== null) {
@@ -54,29 +54,29 @@ const LoginPage = () => {
   if (!isLogged) {
     return (
       <div className="loginForm">
-          <TextField
-            onChange={(e) => setUsername(e.target.value)}
-            label="Felhasználónév"
-            type="text"
-            variant="filled"
-          />
-          <TextField
-            onChange={(e) => setPassword(e.target.value)}
-            label="Jelszó"
-            type="password"
-            variant="filled"
-          />
+        <TextField
+          onChange={(e) => setUsername(e.target.value)}
+          label="Felhasználónév"
+          type="text"
+          variant="filled"
+        />
+        <TextField
+          onChange={(e) => setPassword(e.target.value)}
+          label="Jelszó"
+          type="password"
+          variant="filled"
+        />
 
-          <LoginButton
-            changeLog={changeLog}
-            username={username}
-            password={password}
-          />
-        </div>
+        <LoginButton
+          changeLog={changeLog}
+          username={username}
+          password={password}
+        />
+      </div>
     );
-   } else {
-      window.location.href='/adminDashboard';
-   }
+  } else {
+    window.location.href = "/adminDashboard";
+  }
 };
 
 export default LoginPage;

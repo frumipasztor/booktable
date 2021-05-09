@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/menu" component={Menu} />
           <Route path="/reservation" component={Reservation} />
           <Route path="/loginPage" component={LoginPage} />
-          <Route path="/adminDashboard" component={AdminDashboard}/>
+          <Route path="/adminDashboard" component={AdminDashboard} />
         </Switch>
       </Router>
     </>

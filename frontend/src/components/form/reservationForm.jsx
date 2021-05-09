@@ -33,11 +33,11 @@ const RegistrationForm = () => {
   let today = new Date();
   today.setHours(today.getHours() + 1);
   today = today.toISOString().slice(0, 16);
- // console.log(today);
+  // console.log(today);
 
   return (
     <div className="regPage">
-      <form >
+      <form>
         <TextField
           onChange={(e) => nameChange(e)}
           variant="filled"

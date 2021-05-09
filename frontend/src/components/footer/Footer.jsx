@@ -24,7 +24,7 @@ function Footer() {
         <FaIcons.FaInstagram />
         <FaIcons.FaYoutube />
         <FaIcons.FaTwitter />
-        <FaIcons.FaPhone/>
+        <FaIcons.FaPhone />
       </div>
     </div>
   );

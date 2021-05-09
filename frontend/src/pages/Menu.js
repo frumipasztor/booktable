@@ -9,8 +9,9 @@ function Menu() {
       <Header />
       <div className="pizzaFetchContainer">
         <div className="siteTitle">
-        <h2>Étlapunk</h2>
-        <span className="decorSpan"></span></div>
+          <h2>Étlapunk</h2>
+          <span className="decorSpan"></span>
+        </div>
         <p className="shortText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           cursus tristique mauris id vehicula. Nulla vestibulum enim vitae
@@ -21,10 +22,10 @@ function Menu() {
           non scelerisque. Duis mollis rutrum sem eu tristique.
         </p>
         <div className="menuContainer">
-        <PizzaFetch />
+          <PizzaFetch />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

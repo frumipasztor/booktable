@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import LoadingMask from "../loadingMask/LoadingMask";
 import Pizza from "./Pizza";
 import "./responsivity.scss";
 
-
 function PizzaFetch() {
-    //! DATA FETCH
+  //! DATA FETCH
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -23,15 +22,15 @@ function PizzaFetch() {
     setData(jsonData.pizza);
   };
 
-    return (
-        <div className="pizza card">
-            {loading ? (
+  return (
+    <div className="pizza card">
+      {loading ? (
         <LoadingMask />
       ) : (
         data.map((pizza, index) => <Pizza pizza={pizza} key={index} />)
       )}
-        </div>
-    )
+    </div>
+  );
 }
 
-export default PizzaFetch
+export default PizzaFetch;

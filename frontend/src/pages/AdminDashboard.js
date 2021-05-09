@@ -14,7 +14,7 @@ function AdminDashboard() {
       <Bookings />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default AdminDashboard;

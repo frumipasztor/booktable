@@ -9,7 +9,13 @@ const ReservationButton = (props) => {
   const reserve = async (e) => {
     e.preventDefault();
 
-    if (props.name !== "" && props.email !== "" && props.date !== "" && props.tel !== "" && props.head !== "") {
+    if (
+      props.name !== "" &&
+      props.email !== "" &&
+      props.date !== "" &&
+      props.tel !== "" &&
+      props.head !== ""
+    ) {
       let formData = new FormData();
 
       formData.append("name", props.name);
@@ -30,7 +36,7 @@ const ReservationButton = (props) => {
     } else {
       setEmptyCheck(true);
     }
-    
+
     /////////////////////////////////
   };
 

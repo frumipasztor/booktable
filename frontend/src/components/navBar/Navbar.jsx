@@ -38,7 +38,7 @@ function Navbar() {
             })}
           </ul>
         </div>
-        
+
         <div className="socials">
           <span className="decor"></span>
           <p className="rest-name">La Piccola Italia</p>

@@ -5,7 +5,6 @@ import Weeks from "../components/weeksPanel/Weeks";
 import Footer from "../components/footer/Footer";
 import AboutUs from "../components/aboutUs/aboutUs";
 
-
 function Home() {
   return (
     <div className="home">
@@ -19,13 +18,11 @@ function Home() {
         <h2>Top ajánlataink</h2>
         <span className="decorSpan"></span>
       </div>
-      <Horizontal/>
-      <Weeks/>
-      <Footer/>
+      <Horizontal />
+      <Weeks />
+      <Footer />
     </div>
   );
 }
 
 export default Home;
-
-

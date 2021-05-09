@@ -10,84 +10,83 @@ $green: #50bc45;
 $gray: #939493;
 
 //fonts
-$bebas: 'Bebas Neue', cursive;
-$montserrat: 'Montserrat', sans-serif;
+$bebas: "Bebas Neue", cursive;
+$montserrat: "Montserrat", sans-serif;
 
-.pizzaFetchContainer{
-    width: 70%;
-    margin: 0 auto;
+.pizzaFetchContainer {
+  width: 70%;
+  margin: 0 auto;
 
-    .shortText{
-        text-align: center;
-        margin: 50px 200px 70px;
-    }
+  .shortText {
+    text-align: center;
+    margin: 50px 200px 70px;
+  }
 
-   .menuContainer{
+  .menuContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-   }
-    
+  }
 }
 
-.pizzaContainer{
-    width: 100%;
-    display: flex;
-    align-items: space-evenly;
-    justify-content: flex-start;
-    margin: 20px 0; 
+.pizzaContainer {
+  width: 100%;
+  display: flex;
+  align-items: space-evenly;
+  justify-content: flex-start;
+  margin: 20px 0;
   //  padding: 10px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 5px;
-    cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
     transition: 1s;
+  }
 
-    &:hover{
-        background: rgba(255,255,255,0.2);
-        transform: scale(1.1);
-        transition: 1s; 
+  img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .pizzaDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+
+    .pizzaName {
+      font-family: $bebas;
+      font-size: 3em;
+      letter-spacing: 3px;
     }
-
-    img{
-        width: 500px;
-        height: 300px;
-        object-fit: cover;
+    .pizzaCardDecor {
+      height: 5px;
+      width: 80%;
+      border-radius: 3rem;
+      background: rgb(0, 140, 69);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 140, 69, 1) 0%,
+        rgba(244, 245, 240, 1) 50%,
+        rgba(205, 33, 42, 1) 100%
+      );
     }
-
-    .pizzaDetails{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 50%;
-
-        .pizzaName{
-            font-family: $bebas;
-            font-size: 3rem;
-            letter-spacing: 3px;
-        }
-        .pizzaCardDecor{
-            height: 5px;
-            width: 80%;
-            border-radius: 3rem;
-            background: rgb(0, 140, 69);
-            background: linear-gradient(
-              90deg,
-              rgba(0, 140, 69, 1) 0%,
-              rgba(244, 245, 240, 1) 50%,
-              rgba(205, 33, 42, 1) 100%
-            );
-        }
-        .toppings{
-            font-size: 1rem;
-            text-align: center;
-            line-height: 50px;
-        }
-        .pizzaPrice{
-            font-size: 2rem;
-            margin: 20px 0 0;
-            color: $yellow;
-        }
+    .toppings {
+      font-size: 1rem;
+      text-align: center;
+      line-height: 50px;
     }
+    .pizzaPrice {
+      font-size: 2rem;
+      margin: 20px 0 0;
+      color: $yellow;
+    }
+  }
 }

@@ -12,32 +12,31 @@ $gray: #939493;
   .wrapper {
     height: 100%;
     max-width: 100vw;
-  
+
     .header {
       .header-text {
         width: 80%;
-  
+
         span {
           width: 40%;
-          }
+        }
       }
     }
   }
-} 
+}
 
 @media screen and (max-width: 1440px) {
   .wrapper {
     height: 100%;
     max-width: 100vw;
-  
+
     .header {
-       
       .header-text {
         width: 80%;
-  
+
         span {
           width: 40%;
-          }
+        }
       }
     }
   }
@@ -46,20 +45,19 @@ $gray: #939493;
   .wrapper {
     height: 100%;
     max-width: 100vw;
-  
+
     .header {
-       
       .header-text {
         width: 80%;
-  
+
         h1 {
           font-size: 4em;
         }
-  
+
         span {
           width: 45%;
-          }
-  
+        }
+
         h2 {
           font-size: 2em;
           color: $yellow;
@@ -74,13 +72,13 @@ $gray: #939493;
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper{
-    .header{
-      .header-text{
+  .wrapper {
+    .header {
+      .header-text {
         top: 75%;
         left: 20%;
         transform: translate(-20%, -75%);
-        span{
+        span {
           width: 60%;
         }
       }
@@ -91,18 +89,17 @@ $gray: #939493;
 @media screen and (max-width: 480px) {
   .wrapper {
     max-width: 100vw;
-  
+
     .header {
-       
-      .header-text {  
+      .header-text {
         h1 {
           font-size: 4em;
         }
-  
+
         span {
           width: 80%;
-          }
-  
+        }
+
         h2 {
           font-size: 2em;
           color: $yellow;
@@ -114,9 +111,7 @@ $gray: #939493;
       }
     }
   }
-
-} 
+}
 
 @media screen and (max-width: 350px) {
-  
 }

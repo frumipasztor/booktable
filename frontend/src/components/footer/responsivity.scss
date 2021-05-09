@@ -1,68 +1,62 @@
 //!FOOTER
 
 @media screen and (max-width: 1600px) {
-
-} 
+}
 
 @media screen and (max-width: 1440px) {
-
 }
 
 @media screen and (max-width: 1024px) {
-    .footer{       
-        width: 90%;
-        max-height: none;
-        height: 100%;
-        margin: 40px auto;
+  .footer {
+    width: 90%;
+    max-height: none;
+    height: 100%;
+    margin: 40px auto;
 
-        .footerleft{
-        
-        }
-        .footermiddle{
-            
-        }
-        .footerright{
-            width: 20%;
-            
-        }
+    .footerleft {
     }
+    .footermiddle {
+    }
+    .footerright {
+      width: 20%;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .footer{       
-        width: 100vw;
-        max-height: none;
-        height: 100%;
-        justify-content: center;
+  .footer {
+    width: 100vw;
+    max-height: none;
+    height: 100%;
+    justify-content: center;
 
-        flex-direction: column;
-        .footerleft{
-            order: 3;
-            text-align: center;
-            margin: 20px 0;
-            padding: 20px
-        }
-        .footermiddle{
-            order: 1;
-            margin: 20px 0;
-        }
-        .footerright{
-            order: 2;
-            width: 50%;
-        }
+    flex-direction: column;
+    .footerleft {
+      order: 3;
+      text-align: center;
+      margin: 20px 0;
+      padding: 20px;
     }
+    .footermiddle {
+      order: 1;
+      margin: 20px 0;
+    }
+    .footerright {
+      order: 2;
+      width: 50%;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
-
-} 
+}
 
 @media screen and (max-width: 350px) {
-    .footer{
-       .footerleft{
-            h2{
-                font-size: 2em;
-            }
-        }
+  .footer {
+    .footerleft {
+      h2 {
+        font-size: 2em;
+      }
     }
+  }
 }

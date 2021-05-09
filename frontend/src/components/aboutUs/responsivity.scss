@@ -9,109 +9,107 @@
       .aboutUsleft {
         width: 45%;
       }
-      .aboutUsText{
-          p{
-              font-size: 1.2em;
-          }
+      .aboutUsText {
+        p {
+          font-size: 1.2em;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 1439px) {
-     .aboutUs {
+  .aboutUs {
     .aboutUsContainer {
-        flex-direction: column;
+      flex-direction: column;
       .aboutUsleft {
       }
-      .aboutUsText{
-          padding: 0 30px;
-          margin-top: 20px; 
+      .aboutUsText {
+        padding: 0 30px;
+        margin-top: 20px;
       }
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
-    .aboutUs {
-        .aboutUsContainer {
-          flex-direction: column;
-          padding: 4px 165px;
-    
-          .aboutUsleft {
-            width: 55%;
-          }
-          .aboutUsText{
-              width: 70%;
-              p{
-                  text-align: center;
-              }
-          }
+  .aboutUs {
+    .aboutUsContainer {
+      flex-direction: column;
+      padding: 4px 165px;
+
+      .aboutUsleft {
+        width: 55%;
+      }
+      .aboutUsText {
+        width: 70%;
+        p {
+          text-align: center;
         }
       }
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .aboutUs {
-        .aboutUsContainer {
-          padding: 4px 100px;
-    
-          .aboutUsleft {
-            width: 100%;
-            background-image: url('./aboutuspizza.jpg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            margin: 0 auto;
-            
+  .aboutUs {
+    .aboutUsContainer {
+      padding: 4px 100px;
 
-             .pizza1{
-                // left: 119px;
-                display:none;
-             }
-            .pizza2{
-            //     left: 112px;
-            display:none;
-             }
-             .pizza3{
-            //     left: 285px;
-            display:none;
-             }
-          }
-          .aboutUsText{
-              width: 100%;
-              margin-top: 20px;
-              
-          }
+      .aboutUsleft {
+        width: 100%;
+        background-image: url("./aboutuspizza.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 0 auto;
+
+        .pizza1 {
+          // left: 119px;
+          display: none;
+        }
+        .pizza2 {
+          //     left: 112px;
+          display: none;
+        }
+        .pizza3 {
+          //     left: 285px;
+          display: none;
         }
       }
+      .aboutUsText {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .aboutUsContainer{
-        width: 100vw;
-        padding: 0 30px;
+  .aboutUsContainer {
+    width: 100vw;
+    padding: 0 30px;
 
-        .aboutUsleft{
-            margin-left: -50%;
-        }
+    .aboutUsleft {
+      margin-left: -50%;
     }
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .aboutUsContainer{
+  .aboutUsContainer {
     padding: 0 20px !important;
-    .aboutUsleft{
+    .aboutUsleft {
       padding: 0;
     }
   }
 }
 
 @media screen and (max-width: 350px) {
-  .aboutUsContainer{
+  .aboutUsContainer {
     padding: 0 5px !important;
     margin: 0 auto;
-    .aboutUsleft{
+    .aboutUsleft {
       padding: 0;
     }
   }
