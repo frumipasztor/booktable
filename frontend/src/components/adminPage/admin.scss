@@ -1,4 +1,68 @@
+//colors
+$dark: #050304;
+$red: #860202;
+$orange: #bc7828;
+$yellow: #ffc601;
+$beige: #f2bc78;
+$white: #fdfefd;
+$green: #50bc45;
+$gray: #939493;
+
+//fonts
+$bebas: "Bebas Neue", cursive;
+$montserrat: "Montserrat", sans-serif;
+
 .bookingsPage {
   text-align: center;
   margin: 30px;
+
+  h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+  }
+  .bookedContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+
+    .bookedPersonContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 600px;
+      margin: 30px 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 1s;
+
+      h3 {
+        font-size: 2em;
+        color: $yellow;
+        margin: 10px 0 20px;
+      }
+
+      h5 {
+        color: $yellow;
+        font-size: 1em;
+      }
+
+      h4 {
+        margin: 10px;
+        font-size: 1.2em;
+        text-transform: bold;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+        transition: 1s;
+      }
+    }
+  }
 }

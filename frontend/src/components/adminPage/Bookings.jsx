@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import LoadingMask from "../loadingMask/LoadingMask";
 import BookedPerson from "./BookedPerson";
 import "./admin.scss";
+import "./responsivity.scss";
 
 function Bookings() {
   //! DATA FETCH
@@ -27,13 +28,19 @@ function Bookings() {
   return (
     <div>
       <div className="bookingsPage">
-        {loading ? (
-          <LoadingMask />
-        ) : (
-          data.map((persons, index) => (
-            <BookedPerson persons={persons} key={index} />
-          ))
-        )}
+        <h2>
+          A foglalások törlése valamint újak megjelenítése, csak is frissítéssel
+          érhetők el!
+        </h2>
+        <div className="bookedContainer">
+          {loading ? (
+            <LoadingMask />
+          ) : (
+            data.map((persons, index) => (
+              <BookedPerson persons={persons} key={index} />
+            ))
+          )}
+        </div>
       </div>
     </div>
   );

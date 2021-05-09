@@ -10,7 +10,7 @@ const Header = () => {
         <div className="header-text">
           <h1>La piccola Italia</h1>
           <span></span>
-          <h2>Best pizza in the world. </h2>
+          <h2 className="sloganText">Best pizza in the world. </h2>
           <h3>Have you tasted better?</h3>
         </div>
       </div>

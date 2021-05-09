@@ -1,0 +1,84 @@
+@media screen and (max-width: 1600px) {
+  .bookingsPage {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    .bookedContainer {
+      margin: 30px 0;
+      .bookedPersonContainer {
+        width: 600px;
+        margin: 30px 20px;
+
+        h3 {
+          font-size: 1.5em;
+        }
+        h4 {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+  .bookingsPage {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    .bookedContainer {
+      margin: 30px 0;
+      width: 80%;
+      flex-direction: column;
+      .bookedPersonContainer {
+        width: 100vw;
+        margin: 30px 0;
+        transition: 0s;
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+          transform: none;
+          transition: 0s;
+        }
+
+        h3 {
+          font-size: 1.5em;
+        }
+        h4 {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bookingsPage {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    .bookedContainer {
+      margin: 30px 0;
+      width: 100vw;
+      flex-direction: column;
+      .bookedPersonContainer {
+        width: 100vw;
+        margin: 30px 0;
+
+        h3 {
+          font-size: 1.5em;
+        }
+        h4 {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+}
