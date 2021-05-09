@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import * as FaIcons from "react-icons/fa";
+import "./responsivity.scss";
 
 function Footer() {
   return (

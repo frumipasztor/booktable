@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.scss";
+import "./responsivity.scss";
 
 const Header = () => {
   return (

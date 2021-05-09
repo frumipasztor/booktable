@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./weeks.scss";
+import "./responsivity.scss";
 
 function Weeks() {
   return (

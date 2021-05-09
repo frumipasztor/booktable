@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./form.scss";
 import ReservationButton from "./reservationButton";
 import TextField from "@material-ui/core/TextField";
+import "./responsivity.scss";
 
 const RegistrationForm = () => {
   const [name, setName] = useState("");
@@ -56,8 +57,7 @@ const RegistrationForm = () => {
           onChange={(e) => telChange(e)}
           variant="filled"
           value={tel}
-          type="tel"
-          pattern="[0-9]{11}"
+          type="text"
         />
         <TextField
           onChange={(e) => headChange(e)}

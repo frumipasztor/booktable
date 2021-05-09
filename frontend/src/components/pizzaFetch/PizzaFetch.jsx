@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import LoadingMask from "../loadingMask/LoadingMask";
 import Pizza from "./Pizza";
+import "./responsivity.scss";
 
 
 function PizzaFetch() {

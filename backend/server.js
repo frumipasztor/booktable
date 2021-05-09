@@ -61,10 +61,28 @@ app.post("/bookatable", function (req, res) {
   }
 });
 
-app.post("/deleteBooking", function (req, res) {
-  res.json({ msg: "success"})
-  console.log(req.body.email);
+//!Foglalás törlése
+
+app.post("/deleteBooking", function (req, res) {  
+    console.log(jsonBookingData.persons);
+
+    jsonBookingData.persons.map((person, index) => {if(person.email === req.body.email){
+      jsonBookingData.persons.splice(index, 1);
+    }});
+
+    let data = JSON.stringify(jsonBookingData, null, 2);
+
+    fs.writeFile("costumers.json", data, "utf8", (err) => {
+      if (err) {
+        console.log("write file => " + err);}
+        else{
+          res.json({ msg: "success"})
+        }
+    })
+
+    console.log("törlés sikeres");
 });
+
 
 //!Jelszó generálás adminhoz
 
