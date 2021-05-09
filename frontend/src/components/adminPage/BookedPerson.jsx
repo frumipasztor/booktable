@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 function BookedPerson({ persons }) {
+
+  const [isdeleted, setDeleted] = useState(false);
+
+
+
   const postFetch = () => {
     const formData = new FormData();
 
@@ -10,7 +15,11 @@ function BookedPerson({ persons }) {
     fetch("http://localhost:3001/deleteBooking", {
       method: "POST",
       body: formData,
-    });
+    }).then((res) => { if (res.ok) {
+      setDeleted(true);
+      console.log(res.json());
+    }
+  });
   };
 
   return (
@@ -20,7 +29,8 @@ function BookedPerson({ persons }) {
       <h4>Telefonszám: {persons.tel}</h4>
       <h4>Foglalt hely: {persons.head}</h4>
       <h4>Foglalás időpontja: {persons.date}</h4>
-      <button onClick={postFetch}>Delete</button>
+      {!isdeleted ? (<button onClick={postFetch}>Delete</button>) : (<p>Foglalás törölve</p>) }
+      
     </div>
   );
 }
