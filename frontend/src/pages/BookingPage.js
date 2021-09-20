@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../components/header/Header";
-import ReservationForm from "../components/form/reservationForm";
+import Booking from "../components/book/booking";
 import Footer from "../components/footer/Footer";
 
-function Reservation() {
+function BookingPage() {
   return (
     <div className="reservation">
       <Header />
@@ -11,10 +11,10 @@ function Reservation() {
         <h2>Asztalfoglalás</h2>
         <span className="decorSpan"></span>
       </div>
-      <ReservationForm />
+      <Booking/>
       <Footer />
     </div>
   );
 }
 
-export default Reservation;
+export default BookingPage;

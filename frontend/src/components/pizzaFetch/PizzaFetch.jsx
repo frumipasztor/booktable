@@ -16,10 +16,10 @@ function PizzaFetch() {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("http://localhost:3001/pizza/");
+    const result = await fetch("http://localhost:5000/api/pizza/");
     const jsonData = await result.json();
     console.log(jsonData);
-    setData(jsonData.pizza);
+    setData(jsonData);
   };
 
   return (

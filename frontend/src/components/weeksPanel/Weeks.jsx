@@ -10,7 +10,7 @@ function Weeks() {
         <div className="weeksContent">
           <h2>Heti ajánlatunk</h2>
           <h3>Margherita Pizza</h3>
-          <Link to="/reservation">
+          <Link to="/booking">
             <button>Asztalfoglalás</button>
           </Link>
         </div>

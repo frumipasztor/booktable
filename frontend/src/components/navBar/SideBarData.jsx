@@ -6,7 +6,7 @@ export const SideBarData = [
   },
   {
     title: "Foglalás",
-    path: "/reservation",
+    path: "/booking",
     className: "nav-text",
   },
   {

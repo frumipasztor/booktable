@@ -11,14 +11,14 @@ function HorizontalOffers() {
     fetchData();
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1500);
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("http://localhost:3001/toppizza/");
+    const result = await fetch("http://localhost:5000/api/topPizza");
     const jsonData = await result.json();
     console.log(jsonData);
-    setData(jsonData.toppizza);
+    setData(jsonData);
   };
 
   return (
