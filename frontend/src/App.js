@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import BookingPage from "./pages/BookingPage";
-import LoginPage from "./pages/LoginPage";
-import AdminDashboard from "./pages/AdminDashboard";
 
 const App = () => {
   return (
@@ -17,8 +15,6 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/menu" component={Menu} />
           <Route path="/booking" component={BookingPage} />
-          <Route path="/loginPage" component={LoginPage} />
-          <Route path="/adminDashboard" component={AdminDashboard} />
         </Switch>
       </Router>
     </>

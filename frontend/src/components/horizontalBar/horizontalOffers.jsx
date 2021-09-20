@@ -15,7 +15,7 @@ function HorizontalOffers() {
   }, []);
 
   const fetchData = async () => {
-    const result = await fetch("http://localhost:5000/api/topPizza");
+    const result = await fetch("https://lapiccolaitalia.herokuapp.com/api/topPizza");
     const jsonData = await result.json();
     console.log(jsonData);
     setData(jsonData);

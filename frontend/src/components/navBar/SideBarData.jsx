@@ -14,9 +14,4 @@ export const SideBarData = [
     path: "/menu",
     className: "nav-text",
   },
-  {
-    title: "Bejelentkezés",
-    path: "/loginPage",
-    className: "nav-text",
-  },
 ];
