@@ -36,15 +36,15 @@ $montserrat: "Montserrat", sans-serif;
   justify-content: flex-start;
   margin: 20px 0;
   //  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #060506;
   border-radius: 5px;
   cursor: pointer;
   transition: 1s;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     transform: scale(1.1);
-    transition: 1s;
+    transition: 0.5s;
   }
 
   img {

@@ -12,13 +12,13 @@ function PizzaFetch() {
     fetchData();
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   const fetchData = async () => {
     const result = await fetch("https://lapiccolaitalia.herokuapp.com/api/pizza");
     const jsonData = await result.json();
-    console.log(jsonData);
+   // console.log(jsonData);
     setData(jsonData);
   };
 

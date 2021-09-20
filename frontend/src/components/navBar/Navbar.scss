@@ -81,11 +81,11 @@ a {
 }
 
 .nav-text a:hover {
-  background: rgba(255, 255, 255, 0.01);
+  background: #060506;
   backdrop-filter: blur(20px);
   background-clip: padding-box;
   transform: scale(1.1);
-  transition: 1s;
+  transition: 0.5s;
   outline: none;
   color: $yellow;
 }
